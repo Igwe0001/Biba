@@ -124,7 +124,7 @@ li a {
 
 .home {
     height: 100vh;
-     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.9)) , url("/images/pexels-isabella-mendes-1304469.jpg");
+     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.9)) , url("/images/pexels-isabella-mendes-1304469\ \(1\).jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
