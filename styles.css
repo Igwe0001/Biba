@@ -22,16 +22,21 @@ html {
 
 body {
 
-    background-color: var(--yellow-color);
+   
 }
 
 
 header {
-   position: relative;
+   position: fixed;
    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    transition: .6s;
+    z-index: 100000;
+    /* background-color: rgba(86,86,86,0.3);
+    backdrop-filter: blur(10px); */
 }
 
  
@@ -43,6 +48,17 @@ header {
     margin: 0 auto;
 } 
 
+header.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-active {
+     background-color: rgba(86,86,86,0.7);
+     backdrop-filter: blur(10px);
+    box-shadow: 5px -1px 12px -5px grey;
+}
 
 nav {
     position: absolute;
@@ -73,6 +89,7 @@ li {
     list-style: none;
     text-align: center;
     font-size: 2.5rem;
+    padding: 10px;
 }
 
 li a {
@@ -103,6 +120,20 @@ li a {
     transform: translate(1px, -1.5px) rotate(-50deg);
 }
 
+/* Sections */
+
+.home {
+    height: 100vh;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.9)) , url("/images/pexels-isabella-mendes-1304469.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.services {
+    background-color: white;
+    height: 100vh;
+  
+}
 
 
 
